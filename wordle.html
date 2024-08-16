@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="wordle.css" />
+    <script src="wordle.js"></script>
+    <title>WORDLE</title>
+  </head>
+  <body>
+    <div align="center" style="color:#034694; font-size: 40px; margin: 10px;">
+      📱 Hello, wordle! 📱
+    </div>
+    <br>
+    <div align="right">
+      <input type="button" id="showRuleBtn" value="?" />
+    </div>
+    <br>
+
+    <div id="inputArea"></div>
+    <br>
+    <hr>
+    <br>
+
+    <div id="keybordTopArea" class="keyboardArea">
+      <input type="text" class="keyboardBtn" value="Q" readonly />
+      <input type="text" class="keyboardBtn" value="W" readonly />
+      <input type="text" class="keyboardBtn" value="E" readonly />
+      <input type="text" class="keyboardBtn" value="R" readonly />
+      <input type="text" class="keyboardBtn" value="T" readonly />
+      <input type="text" class="keyboardBtn" value="Y" readonly />
+      <input type="text" class="keyboardBtn" value="U" readonly />
+      <input type="text" class="keyboardBtn" value="I" readonly />
+      <input type="text" class="keyboardBtn" value="O" readonly />
+      <input type="text" class="keyboardBtn" value="P" readonly />
+    </div>
+    <br />
+
+    <div id="keyboardCenterArea" class="keyboardArea">
+      <input type="text" class="keyboardBtn" value="A" readonly />
+      <input type="text" class="keyboardBtn" value="S" readonly />
+      <input type="text" class="keyboardBtn" value="D" readonly />
+      <input type="text" class="keyboardBtn" value="F" readonly />
+      <input type="text" class="keyboardBtn" value="G" readonly />
+      <input type="text" class="keyboardBtn" value="H" readonly />
+      <input type="text" class="keyboardBtn" value="J" readonly />
+      <input type="text" class="keyboardBtn" value="K" readonly />
+      <input type="text" class="keyboardBtn" value="L" readonly />
+    </div>
+    <br />
+
+    <div id="keyboardBottomArea" class="keyboardArea">
+      <input type="text" class="keyboardBtn" value="Enter" style="width: 80px" readonly />
+      <input type="text" class="keyboardBtn" value="Z" readonly />
+      <input type="text" class="keyboardBtn" value="X" readonly />
+      <input type="text" class="keyboardBtn" value="C" readonly />
+      <input type="text" class="keyboardBtn" value="V" readonly />
+      <input type="text" class="keyboardBtn" value="B" readonly />
+      <input type="text" class="keyboardBtn" value="N" readonly />
+      <input type="text" class="keyboardBtn" value="M" readonly />
+      <input type="text" class="keyboardBtn" value="←" style="width: 80px" readonly />
+      </div>
+      <br>
+      <br>
+
+    <div class="wordle_rule" id="wordle_rule">
+      <h3><strong>게임 규칙</strong></h3>
+      <h4>
+        만일 타일이 <span style="color: rgb(102, 195, 102)">■</span>으로 표시된다면 :
+      </h4>
+      표시된 글자가 워들에 존재하고,<br>
+      표시된 글자가 정확히 같은 위치에 있다.<br />
+      <h4>
+        만일 타일이 <span style="color: rgb(232, 232, 124)">■</span>으로 표시된다면 :
+      </h4>
+      표시된 글자가 워들에 존재하지만,<br>
+      정확한 위치에 있지는 않다.<br />
+      <h4>
+        만일 타일이 <span style="color: rgb(199, 187, 187)">■</span>으로 표시된다면 :
+      </h4>
+      이 글자는 워들에 없는 글자이다.<br />
+    </div>
+
+  </body>
+</html>

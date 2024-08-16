@@ -1,0 +1,61 @@
+body {
+  background-color: whitesmoke;
+}
+
+#showRuleBtn {
+  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
+  border: 3px dotted #034694;
+  border-radius: 50%;
+  color: #034694;
+  text-align: center;
+  font-weight: 750;
+  background-color: #ccc;
+  margin-right: 20%;
+  cursor: pointer;
+}
+
+.wordle_rule {
+  box-sizing: border-box;
+  width: 350px;
+  height: 450px;
+  padding: 20px;
+  border: 5px dotted #ccc;
+  border-radius: 5%;
+  text-align: center;
+  color: #034694;
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  background-color: whitesmoke;
+  margin-left: auto;
+  margin-right: 10%;
+  display: none;
+}
+
+#inputArea {
+  text-align: center;
+}
+
+.keyboardArea {
+  text-align: center;
+}
+
+.keyboardBtn {
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #ddd;
+  color: #034694;
+  cursor: pointer;
+}
+
+.inputBtn {
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+  color: #034694;
+}
